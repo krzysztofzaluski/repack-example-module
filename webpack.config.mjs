@@ -246,7 +246,7 @@ export default env => {
             new Repack.plugins.ModuleFederationPlugin({
                 name: 'ExampleApp',
                 exposes: {
-                    './ExampleApp': './App'
+                    './ExampleApp': './src/navigation/MainNavigator',
                 },
                 shared: {
                     react: {
